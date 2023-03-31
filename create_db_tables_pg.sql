@@ -5,7 +5,7 @@
 -- Table structure for table departments
 --
 
-CREATE TABLE departments (
+CREATE TABLE retail_db.departments (
   department_id INT NOT NULL,
   department_name VARCHAR(45) NOT NULL,
   PRIMARY KEY (department_id)
@@ -15,7 +15,7 @@ CREATE TABLE departments (
 -- Table structure for table categories
 --
 
-CREATE TABLE categories (
+CREATE TABLE retail_db.categories (
   category_id INT NOT NULL,
   category_department_id INT NOT NULL,
   category_name VARCHAR(45) NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE categories (
 -- Table structure for table products
 --
 
-CREATE TABLE products (
+CREATE TABLE retail_db.products (
   product_id INT NOT NULL,
   product_category_id INT NOT NULL,
   product_name VARCHAR(45) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE products (
 -- Table structure for table customers
 --
 
-CREATE TABLE customers (
+CREATE TABLE retail_db.customers (
   customer_id INT NOT NULL,
   customer_fname VARCHAR(45) NOT NULL,
   customer_lname VARCHAR(45) NOT NULL,
@@ -57,7 +57,7 @@ CREATE TABLE customers (
 -- Table structure for table orders
 --
 
-CREATE TABLE orders (
+CREATE TABLE retail_db.orders (
   order_id INT NOT NULL,
   order_date TIMESTAMP NOT NULL,
   order_customer_id INT NOT NULL,
@@ -69,7 +69,7 @@ CREATE TABLE orders (
 -- Table structure for table order_items
 --
 
-CREATE TABLE order_items (
+CREATE TABLE retail_db.order_items (
   order_item_id INT NOT NULL,
   order_item_order_id INT NOT NULL,
   order_item_product_id INT NOT NULL,
